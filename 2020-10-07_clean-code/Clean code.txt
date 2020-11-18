@@ -1,0 +1,80 @@
+Clean code
+
+1. Why does code matter? 
+
+- How many computers do you own? 
+- How many processors are there in a smartphone? In a car? In a plane? In a satellite? 
+- Smartphone : main processor, screen processor, wifi processor, GPS processor, bluetooth processor, microphone processor, loudpseaker processor, etc... 
+- Headphones have processors 
+- If you have adjustable lights at home, they have processors too 
+- Smoke detectors 
+- Every single rechargeable battery 
+Each of those processors uses software. Millions and millions of lines of code, interacting in real time with devices all around the world in a big web of 1 and 0. 
+
+Uncle Bob : “In a modern car, there are over 100 million lines. Most of it runs the radio and the GPS, but some of it runs the engine, the brakes,... Dozens of people have died because of failures in those lines of code."
+
+Code is everywhere in modern society
+
+Uncle Bob : "In our society today, it is impossible to go more than 60 seconds without interacting with the software system. Because there is without interacting with the software system. You can't talk on the phone, you can't watch TV, you can't microwave popcorn, you can't wash the dishes or dry your clothes, you can't drive anywhere. 
+
+Here's a mindblower: 1 smartphone, however basic, holds more computing power (calculation power) than what was available in the whole world in 1969 when man landed on the moon. Hear me out, I did not say that your smartphone is more powerful than the best computer available back then. I said that your smartphone is more powerful than all the computers that existed in 1969 put together. 
+
+Witout software, our whole world stops. 
+ 
+Our way of life has become absolutely dependent on software. It is important to understand that it is not just the individuals, but the whole system that relies on software. If we collectively decided to stop using software today, most of us would be dead in a week. We can't go back to how things were before the software revolution. The only way is forward. And all of these transformations happened in the last 30 years. 
+
+Uncle Bob: "Our society runs on software. Nothing happens in our society without software. It wasn't that way in the 60s, the 70s, even the 80s, but today, there is nothing you can do without sofware. You cannot buy or sell anything, you cannot pass a law nor enforce it, you can't get money out of the bank without software. Software runs everything. And our society does not yet realize just how dependent it is on software. And who writes that software? We do." 
+
+So, what do we, developers, do? Short answer : we rule the world. Quite literally. We write the rules of behavior for any object that uses software. 
+
+2. What do developers do? Long answer : 
+If you think that the job of a developer is to write code that works, you're only 50% right. 
+Martin Fowler : "Any fool can write code that a computer can understand. Good programmers write code that humans can understand."
+This is a fundamental part of our job.
+Remember the code review that we had a few weeks ago. How many of you had had at least one of those "huh"? moment when Pierre asked us "what did you try to do here"? I sure did. And it was my own code. Written 10 days ago. And it was very basic. 
+
+3. Why does clean code matter?
+
+Now imagine what can happen if you're writing the code that controls the brakes of millions of cars, or the emergency shutdown system of a nuclear reactor. Imagine what can happen if you're not taking every precaution so that the people that have to integrate their software with yours understand fully what you did, how you did it and why you did it. 
+
+Developers hold the life and death of most human beings alive today in their hands. That is how important we are. And of course, as uncle Ben told Peter Parker, with great power comes great responsibility. The responsibility to make yourself understood by other developers in order to avoid desastrous consequences.
+
+Uncle Bob: "The event that will eventually cause society to wake up is when some poor programmer does one dumb thing and kills 10.000 people at a shot.(...) And when that occurs, and you know it's going to occur (...), the politicians of the world will rise up in righteous indignation, as they should, and they will point their finger right at us." 
+
+And if you think that this is ridiculous, you should know about the VW scandal of 2015. When the CEO of Volkswagen testified before the Congress, he promised that he had no idea the software was cheating the tests, that some developers did this on their own initiative. Those developers are in jail now. The CEO of Volkswagen is not. 
+
+But you're going to say "we are probably going to work as web developers", and you could think that those dramatic potentialities are none of your concern. And that's partly true. We certainly won't be writing code for nuclear reactors. Phew. But we will be adding something to the great web of data that connects computers, cars, fridges and nuclear plants. We are developers, and as such, we should be part of the movement towards ethical, clean coding. 
+
+4. What is clean code? 
+
+Bjarne Stroustrup (C++) : "Clean code does one thing well." 
+Grady Booch (UML) : "Clean code is simple and direct."
+Michael feathers : "Clean code always looks like it was written by someone who cares."
+Uncle Bob : "Clean code is no surprises."
+
+Basically, clean code is code that feels logical is and easy to understand. Other developers should be able to read through your code and immediately understand what it does. We have to care about the people who will read our code. 
+
+Uncle Bob : "Making code that works is only half of your job, and it's the least important part. You must write code that other people can make work. If you hand me code that works perfectly, but I can't understand it, then as soon as the requirements change, that code is useless. On the other hand, if you give me code that does not work, but I can understand it, I can make it work. It is more important to communicatewith your peers using programming language than it is to communicate with a computer, because if you do that well, somebody will make it work."
+
+WTFmeter : the better the code, the less WTF/minute.
+
+5. How to write clean code? 
+- Use technology ; spellcheck your code, use the html validator, install a code formatter. 
+- Learn how things work, not just how to use them. Example: everyone of us knows how to use a smartphone (interact with buttons, a screen, charge its battery when needed), but I could bet 100€ that no one can explain to me how it works. And that's ok, we don't need to know that. 
+However, if we want to be good developers, we need to know how our tools work. 
+
+- Refactor functions. The rule of thumb is as follows: a function should do one thing only. If it does several things, then you should extract some of them and turn them into functions of their own. Ik makes the code easier to understand (more readable) and to maintain (more predictable).
+- Explain how your code works. Learn how to write useful comments (example from last week algo-js), and write them as you go, do not wait until your work is finished, because you will probably forget important things. 
+- Learn about standards and conventions in writing and stick to it. If you have to do something that's new for you, it has probably been done by hundreds of other developers before. Do not try and reinvent the wheel every time.
+- Use git a lot. Commits are like functions, they should do 1 thing and have informative commit messages.  
+ 
+- Be humble. Most of the time, you're going to be wrong. Get used to it. 
+- Be persistent. You've just spent 5 hours looking at the same lines of code, and all of a sudden things work as they should. You're so happy that you don't want to change anything, it works ok?? Don't leave it at that. Refactor what you can, and don't forget to write comments. 
+- Be concise. Long code is not good code. 99% of the time, readability > performance.
+ 
+Conclusion : 
+
+Someday, we will be working on some code that has been written by several people over various periods of time. People that have maybe never met one another, and that may not even speak the same language. And we will have to understand what they did, and to work in the same direction as they did. All that while making sure that the people who will come after us will be able to understand what we did with the code. 
+
+Don't make a mess! Especially when you start from scratch, it is really easy and fast to build new things. But as the project gets more and more complex, you have to work with what you already built, and it gets tricky. So much so that at some point, you will spend hours fixing bugs after bugs, and implementing new features will become exponentialy difficult. The first few days are capital in establishing ground rules and studying your options. Don't get high on adrenalin and rush into writing broken or unpractical code. 
+Uncle Bob : "The only way to go fast is to do a good job."
