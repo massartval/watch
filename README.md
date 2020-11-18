@@ -18,6 +18,7 @@ Ce dépôt contient les présentations que j'ai réalisées pour mes camarades d
 
 ### Refactoring if-else statements 
 18/11/2020  
+
 [Article](https://dev.to/sylwiavargas/5-ways-to-refactor-if-else-statements-in-js-functions-208e)  
 [Dossier](2020-11-18_refactoring-if-else-statements)
 
